@@ -6,6 +6,7 @@ console.log(`
         1 - Adicionar dia e atividade
         2 - Imprimir lista do que Fiz
         3 - Excluir lista
+        4 - Editar lista/ Adicionar ativadade
         9 - Sair
 `); 
 let input = +prompt('')
@@ -18,6 +19,9 @@ switch(input){
     break;
     case 3:
     funcao.remove()
+    break;
+    case 4:
+    funcao.edit()
     break;
     case 9:
     process.exit()
