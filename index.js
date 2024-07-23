@@ -5,7 +5,8 @@ console.log(`
         Menu de ferias
         1 - Adicionar dia e atividade
         2 - Imprimir lista do que Fiz
-        3 - Sair
+        3 - Excluir lista
+        9 - Sair
 `); 
 let input = +prompt('')
 switch(input){
@@ -16,7 +17,12 @@ switch(input){
     funcao.imprimir()
     break;
     case 3:
+    funcao.remove()
+    break;
+    case 9:
     process.exit()
     break;
+    default:
+        console.log('Entrada invalida. Digite um valor valido!');
 }
 }
